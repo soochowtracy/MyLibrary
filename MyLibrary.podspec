@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MyLibrary/**/*'
+  # s.source_files = 'MyLibrary/**/*'
 
   #我的钱包
   s.subspec 'NEPMyWallet' do |sp|
