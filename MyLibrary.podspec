@@ -30,8 +30,15 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MyLibrary/Classes/**/*'
-  
+  s.source_files = 'MyLibrary/**/*'
+
+  #我的钱包
+  s.subspec 'NEPMyWallet' do |sp|
+      # sp.public_header_files = 'MyLibrary/Account/**/*.h'
+      sp.source_files = 'MyLibrary/Account/**/*.{h,m,mm,c}'
+  end
+
+  # s.default_subspec = 'NEPMyWallet'
   # s.resource_bundles = {
   #   'MyLibrary' => ['MyLibrary/Assets/*.png']
   # }
