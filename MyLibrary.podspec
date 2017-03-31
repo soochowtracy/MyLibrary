@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyLibrary'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of MyLibrary.'
 
 # This description is used to generate tags and improve search results.
@@ -38,7 +38,12 @@ TODO: Add long description of the pod here.
       sp.source_files = 'MyLibrary/Account/**/*.{h,m,mm,c}'
   end
 
-  # s.default_subspec = 'NEPMyWallet'
+  s.subspec 'NEPMyWallet1' do |sp|
+      # sp.public_header_files = 'MyLibrary/Account/**/*.h'
+      sp.source_files = 'MyLibrary/Classes/**/*.{h,m,mm,c}'
+  end
+
+  s.default_subspec = 'NEPMyWallet1'
   # s.resource_bundles = {
   #   'MyLibrary' => ['MyLibrary/Assets/*.png']
   # }
